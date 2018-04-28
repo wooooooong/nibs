@@ -80,12 +80,17 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             found(code: stringValue)
         }
         
-        dismiss(animated: true)
+//        dismiss(animated: true)
     }
     
     func found(code: String) {
-        print(code)
-        var modalView = UIViewController()
+      print(code)
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "MenuTable", bundle: nil)
+        let navigationController = storyBoard.instantiateViewController(withIdentifier: "MenuVC") as! UINavigationController
+        let vc = navigationController.topViewController as! MenuTableViewController
+        self.present(navigationController, animated: true, completion: nil)
+        
     }
     
     override var prefersStatusBarHidden: Bool {
