@@ -1,0 +1,6 @@
+framework module Pods_nibsTests {
+  umbrella header "Pods-nibsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_nibs {
+  umbrella header "Pods-nibs-umbrella.h"
+
+  export *
+  module * { export * }
+}
