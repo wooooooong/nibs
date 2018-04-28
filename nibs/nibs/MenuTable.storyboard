@@ -95,24 +95,42 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-XY-mlk">
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-XY-mlk">
                                                     <rect key="frame" x="275" y="69" width="94" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="selectStepper:" destination="0kR-wQ-3je" eventType="valueChanged" id="efy-gU-P3E"/>
+                                                    </connections>
                                                 </stepper>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEL-O2-0n1">
+                                                    <rect key="frame" x="301" y="26" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="SbB-RX-4F0" firstAttribute="leading" secondItem="YHL-Ka-X0D" secondAttribute="trailing" constant="28" id="1km-Zl-1M1"/>
                                                 <constraint firstItem="YHL-Ka-X0D" firstAttribute="centerY" secondItem="8k7-Gc-S1p" secondAttribute="centerY" id="255-qb-KFV"/>
+                                                <constraint firstItem="8Mg-XY-mlk" firstAttribute="leading" secondItem="BT5-Fe-6wa" secondAttribute="trailing" constant="47" id="5T7-Tw-Msg"/>
                                                 <constraint firstItem="YHL-Ka-X0D" firstAttribute="leading" secondItem="8k7-Gc-S1p" secondAttribute="leadingMargin" constant="15" id="8Mn-9L-h5T"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Mg-XY-mlk" secondAttribute="bottom" constant="21.5" id="9OW-pu-iG9"/>
+                                                <constraint firstItem="TEL-O2-0n1" firstAttribute="top" secondItem="8k7-Gc-S1p" secondAttribute="top" constant="26" id="IjZ-4b-dAY"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BT5-Fe-6wa" secondAttribute="bottom" constant="15" id="NFc-EJ-gXo"/>
                                                 <constraint firstItem="SbB-RX-4F0" firstAttribute="top" secondItem="8k7-Gc-S1p" secondAttribute="topMargin" constant="15" id="VQ2-10-KxU"/>
+                                                <constraint firstItem="TEL-O2-0n1" firstAttribute="leading" secondItem="SbB-RX-4F0" secondAttribute="trailing" constant="23" id="W6b-Pf-pCM"/>
+                                                <constraint firstItem="8Mg-XY-mlk" firstAttribute="top" secondItem="TEL-O2-0n1" secondAttribute="bottom" constant="22" id="b8w-q4-Mtf"/>
                                                 <constraint firstItem="BT5-Fe-6wa" firstAttribute="top" secondItem="SbB-RX-4F0" secondAttribute="bottom" constant="26" id="duP-Av-RMp"/>
                                                 <constraint firstItem="BT5-Fe-6wa" firstAttribute="leading" secondItem="YHL-Ka-X0D" secondAttribute="trailing" constant="28" id="iYf-0X-ZOY"/>
+                                                <constraint firstAttribute="trailing" secondItem="TEL-O2-0n1" secondAttribute="trailing" constant="32" id="rNG-bd-LfM"/>
                                                 <constraint firstAttribute="trailing" secondItem="SbB-RX-4F0" secondAttribute="trailing" constant="97" id="uHe-9H-iPa"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Mg-XY-mlk" secondAttribute="trailing" constant="6" id="yol-FR-EHT"/>
                                                 <constraint firstAttribute="trailing" secondItem="BT5-Fe-6wa" secondAttribute="trailing" constant="147" id="zuM-YI-Fyg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cellImageView" destination="YHL-Ka-X0D" id="3Rx-V8-nZQ"/>
+                                            <outlet property="countLabel" destination="TEL-O2-0n1" id="4dr-RD-I7h"/>
+                                            <outlet property="countStepper" destination="8Mg-XY-mlk" id="Iwr-oP-EsR"/>
                                             <outlet property="menuTitle" destination="SbB-RX-4F0" id="DL7-E3-akK"/>
                                             <outlet property="priceLabel" destination="BT5-Fe-6wa" id="x5Y-ck-HhH"/>
                                         </connections>

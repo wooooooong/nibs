@@ -80,6 +80,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let section = indexPath.section
         let row = indexPath.row
         
+        if section == 0{
         var cell: MenuTableViewCell? = (tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MenuTableViewCell)
         
         if cell == nil {
@@ -90,17 +91,38 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         cell?.menuTitle.text = dummyData[section][row].0
         cell?.priceLabel.text = String(dummyData[section][row].1)+"원"
         return cell!
+        }else{
+            var cell: MenuPhotoTableViewCell? = (tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! MenuPhotoTableViewCell)
+            
+            if cell == nil{
+                cell = (tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! MenuPhotoTableViewCell)
+            }
+            
+            cell?.menuTitle.text = dummyData[section][row].0
+            cell?.priceLabel.text = String(dummyData[section][row].1)+"원"
+            cell?.cellImageView.image = UIImage(contentsOfFile: "nibsIcon.png")
+            cell?.cellImageView.
+            
+            return cell!
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0{
             totalPrice += dummyData[indexPath.section][indexPath.row].1
             totalPriceLabel.text = String(totalPrice)+"원"
+        }else{
+            
+        }
  
         }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
+        if indexPath.section == 0 {
         totalPrice -= dummyData[indexPath.section][indexPath.row].1
         totalPriceLabel.text = String(totalPrice)+"원"
+        }else{
+            
+        }
     }
     
     @IBAction func selectOrderButton(_ sender: Any) {
@@ -114,6 +136,10 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
             }, completion: nil)
         })
     }
+    
+    @IBAction func selectStepper(_ sender: Any) {
+    }
+    
     
     
     

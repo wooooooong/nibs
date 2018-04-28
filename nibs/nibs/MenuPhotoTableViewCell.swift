@@ -13,6 +13,9 @@ class MenuPhotoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var menuTitle: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var cellImageView: UIImageView!
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var countStepper: UIStepper!
     
     override func awakeFromNib() {
         super.awakeFromNib()
