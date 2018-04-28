@@ -49,23 +49,21 @@
                                 <rect key="frame" x="0.0" y="140" width="375" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="85" id="SUE-Ks-bO2" customClass="NewOrderListTableViewCell" customModule="nibs_store" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="85" id="SUE-Ks-bO2" customClass="NewOrderListTableViewCell" customModule="nibs_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SUE-Ks-bO2" id="xP6-ib-yrk">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWz-G2-LSP">
-                                                    <rect key="frame" x="91" y="14" width="38" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWz-G2-LSP">
+                                                    <rect key="frame" x="100" y="14" width="180" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maU-i5-VpT">
-                                                    <rect key="frame" x="91" y="43" width="68" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maU-i5-VpT">
+                                                    <rect key="frame" x="100" y="44" width="180" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -89,7 +87,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVv-Or-35W">
-                                                    <rect key="frame" x="313" y="27" width="52" height="30"/>
+                                                    <rect key="frame" x="310" y="27" width="55" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="pU9-uO-ALG"/>
+                                                    </constraints>
                                                     <state key="normal" title="주문접수">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -103,9 +104,15 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="gVv-Or-35W" secondAttribute="bottom" constant="17" id="6W9-fK-lGr"/>
                                                 <constraint firstItem="gVv-Or-35W" firstAttribute="trailing" secondItem="xP6-ib-yrk" secondAttribute="trailingMargin" constant="5" id="9hB-cn-69k"/>
                                                 <constraint firstItem="hRB-S8-yED" firstAttribute="top" secondItem="xP6-ib-yrk" secondAttribute="topMargin" constant="32" id="AFv-vI-LrJ"/>
+                                                <constraint firstItem="gVv-Or-35W" firstAttribute="leading" secondItem="maU-i5-VpT" secondAttribute="trailing" constant="30" id="CgI-nE-gf6"/>
                                                 <constraint firstItem="gVv-Or-35W" firstAttribute="top" secondItem="xP6-ib-yrk" secondAttribute="topMargin" constant="16" id="L4d-5N-x2j"/>
+                                                <constraint firstItem="YWz-G2-LSP" firstAttribute="leading" secondItem="6uF-Sh-AuW" secondAttribute="trailing" constant="30" id="QES-5v-zUg"/>
+                                                <constraint firstItem="gVv-Or-35W" firstAttribute="leading" secondItem="YWz-G2-LSP" secondAttribute="trailing" constant="30" id="cYJ-Kh-Z59"/>
                                                 <constraint firstItem="6uF-Sh-AuW" firstAttribute="leading" secondItem="xP6-ib-yrk" secondAttribute="leadingMargin" constant="10" id="hKV-2C-rFf"/>
                                                 <constraint firstItem="hRB-S8-yED" firstAttribute="leading" secondItem="xP6-ib-yrk" secondAttribute="leadingMargin" constant="10" id="w5O-Uc-idZ"/>
+                                                <constraint firstItem="maU-i5-VpT" firstAttribute="leading" secondItem="hRB-S8-yED" secondAttribute="trailing" constant="30" id="wir-ah-chz"/>
+                                                <constraint firstItem="maU-i5-VpT" firstAttribute="top" secondItem="YWz-G2-LSP" secondAttribute="bottom" constant="9" id="xdm-zV-Fs1"/>
+                                                <constraint firstItem="YWz-G2-LSP" firstAttribute="top" secondItem="xP6-ib-yrk" secondAttribute="topMargin" constant="3" id="xm1-tj-tDv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

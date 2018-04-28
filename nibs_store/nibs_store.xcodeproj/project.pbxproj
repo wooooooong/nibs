@@ -15,7 +15,7 @@
 		04B3CB2D20941FEA0037FD96 /* nibs_storeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3CB2C20941FEA0037FD96 /* nibs_storeTests.swift */; };
 		04B3CB3820941FEA0037FD96 /* nibs_storeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3CB3720941FEA0037FD96 /* nibs_storeUITests.swift */; };
 		04B3CB4A20942BB00037FD96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B3CB4920942BB00037FD96 /* GoogleService-Info.plist */; };
-		04B3CB4C20942D1A0037FD96 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3CB4B20942D1A0037FD96 /* DataModel.swift */; };
+		04B3CB4C20942D1A0037FD96 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3CB4B20942D1A0037FD96 /* DataManager.swift */; };
 		04B3CB4E20944A600037FD96 /* NewOrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3CB4D20944A600037FD96 /* NewOrderListTableViewCell.swift */; };
 		04B3CB52209456070037FD96 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3CB51209456070037FD96 /* Order.swift */; };
 		42A0C4365955DE15002CAFC5 /* Pods_nibs_storeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715C0C930BF2DA871720011 /* Pods_nibs_storeTests.framework */; };
@@ -56,7 +56,7 @@
 		04B3CB3720941FEA0037FD96 /* nibs_storeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nibs_storeUITests.swift; sourceTree = "<group>"; };
 		04B3CB3920941FEA0037FD96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B3CB4920942BB00037FD96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		04B3CB4B20942D1A0037FD96 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		04B3CB4B20942D1A0037FD96 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		04B3CB4D20944A600037FD96 /* NewOrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderListTableViewCell.swift; sourceTree = "<group>"; };
 		04B3CB51209456070037FD96 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		139604152DC4C32B831524C0 /* Pods-nibs_storeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nibs_storeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nibs_storeTests/Pods-nibs_storeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		04B3CB45209420080037FD96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				04B3CB4B20942D1A0037FD96 /* DataModel.swift */,
+				04B3CB4B20942D1A0037FD96 /* DataManager.swift */,
 				04B3CB51209456070037FD96 /* Order.swift */,
 			);
 			path = Model;
@@ -507,7 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B3CB4C20942D1A0037FD96 /* DataModel.swift in Sources */,
+				04B3CB4C20942D1A0037FD96 /* DataManager.swift in Sources */,
 				04B3CB1A20941FE90037FD96 /* ViewController.swift in Sources */,
 				04B3CB52209456070037FD96 /* Order.swift in Sources */,
 				04B3CB1820941FE90037FD96 /* AppDelegate.swift in Sources */,
@@ -679,6 +679,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6ZBD6VFGD;
 				INFOPLIST_FILE = nibs_store/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -695,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6ZBD6VFGD;
 				INFOPLIST_FILE = nibs_store/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

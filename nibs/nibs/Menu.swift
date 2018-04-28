@@ -1,13 +1,14 @@
 //
-//  DataSource.swift
-//  nibs_store
+//  Menu.swift
+//  nibs
 //
 //  Created by mac on 2018. 4. 28..
 //  Copyright © 2018년 nibs. All rights reserved.
 //
+
 import Foundation
 
-class Order {
+class Menu {
     var hashID : String
     var seatNo : String
     var time : String
@@ -28,3 +29,4 @@ class Order {
         self.quantity = quantity
     }
 }
+
