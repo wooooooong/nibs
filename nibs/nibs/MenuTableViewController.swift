@@ -21,7 +21,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var orderButton: UIButton!
     @IBOutlet weak var orderCompleteView: UIView!
-    
+    var dataModel = DataManager()
     var dummySectionData = ["시간", "먹거리", "마실거리"]
     var dummyData = [[("1시간",1000),("2시간",2000),("3시간",3000),("4시간",4000),("5시간",5000)],[("햄버거",2000),("오징어",1500),("핫도그",3000)],[("콜라",1000),("사이다",1000),("환타",1000)]]
     
@@ -30,6 +30,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         putSettingMenuTableView()
+        dataModel.getNewOrderList(storeHash: "pchash1")
         // Do any additional setup after loading the view.
     }
     
