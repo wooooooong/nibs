@@ -16,11 +16,11 @@ class DataManager {
     var ref : DatabaseReference! = Database.database().reference()
     var appdelegate = UIApplication.shared.delegate as? AppDelegate
     
-    func getNewOrderList(storeHash: String, completion: @escaping ([Menu]) -> ()){
-        let localRef = ref.child(storeHash).child("menu")
-        localRef.observeSingleEvent(of: DataEventType.value, with:  { (snapshot) in
-            
-        })
-    }
+//    func getNewOrderList(storeHash: String, completion: @escaping ([Menu]) -> ()){
+//        let localRef = ref.child(storeHash).child("menu")
+//        localRef.observeSingleEvent(of: DataEventType.value, with:  { (snapshot) in
+//            
+//        })
+//    }
     
 }

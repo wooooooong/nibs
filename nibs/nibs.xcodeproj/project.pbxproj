@@ -22,6 +22,8 @@
 		E41B33B120941C8700890458 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B33B020941C8700890458 /* MenuTableViewController.swift */; };
 		E41B33B320942CF400890458 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B33B220942CF400890458 /* MenuTableViewCell.swift */; };
 		E41B33B520942DC900890458 /* MenuTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41B33B420942DC900890458 /* MenuTable.storyboard */; };
+		E41B33B920945E7300890458 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E41B33B820945E7300890458 /* GoogleService-Info.plist */; };
+		E41B33BB20945F2B00890458 /* MenuPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B33BA20945F2A00890458 /* MenuPhotoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		E41B33B020941C8700890458 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		E41B33B220942CF400890458 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		E41B33B420942DC900890458 /* MenuTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuTable.storyboard; sourceTree = "<group>"; };
+		E41B33B820945E7300890458 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E41B33BA20945F2A00890458 /* MenuPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPhotoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,11 +132,13 @@
 				04B3CAD420940B0B0037FD96 /* ViewController.swift */,
 				E41B33B020941C8700890458 /* MenuTableViewController.swift */,
 				E41B33B220942CF400890458 /* MenuTableViewCell.swift */,
+				E41B33BA20945F2A00890458 /* MenuPhotoTableViewCell.swift */,
 				E41B33B420942DC900890458 /* MenuTable.storyboard */,
 				04B3CAD620940B0B0037FD96 /* Main.storyboard */,
 				04B3CAD920940B0B0037FD96 /* Assets.xcassets */,
 				04B3CADB20940B0B0037FD96 /* LaunchScreen.storyboard */,
 				04B3CADE20940B0B0037FD96 /* Info.plist */,
+
 				04B3CB5320945E560037FD96 /* GoogleService-Info.plist */,
 				04B3CB5520945ED20037FD96 /* DataManager.swift */,
 			);
@@ -293,6 +299,7 @@
 			files = (
 				E41B33B520942DC900890458 /* MenuTable.storyboard in Resources */,
 				04B3CADD20940B0B0037FD96 /* LaunchScreen.storyboard in Resources */,
+
 				04B3CB5420945E560037FD96 /* GoogleService-Info.plist in Resources */,
 				04B3CADA20940B0B0037FD96 /* Assets.xcassets in Resources */,
 				04B3CAD820940B0B0037FD96 /* Main.storyboard in Resources */,
@@ -407,6 +414,7 @@
 				04B3CAD520940B0B0037FD96 /* ViewController.swift in Sources */,
 				04B3CAD320940B0B0037FD96 /* AppDelegate.swift in Sources */,
 				E41B33B320942CF400890458 /* MenuTableViewCell.swift in Sources */,
+				E41B33BB20945F2B00890458 /* MenuPhotoTableViewCell.swift in Sources */,
 				E41B33B120941C8700890458 /* MenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
